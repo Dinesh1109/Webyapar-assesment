@@ -1,0 +1,101 @@
+.bg-container {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(60deg, #ff6596, #60bef8, #d88cff);
+  background-size: 600% 600%;
+  animation: bgGradientEffect 3s infinite linear;
+  z-index: 1;
+}
+
+@keyframes bgGradientEffect {
+  0% {
+    background-position: 0 85%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0 85%;
+  }
+}
+
+.card {
+  position: relative;
+  right: 20%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgb(252, 252, 251);
+  height: 35rem;
+  width: 28rem;
+  display: inline-block;
+  z-index: 2;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-basis: 350px;
+  margin: 0px 10px;
+}
+
+.img-container img {
+  max-width: 80%;
+  max-height: 100%;
+  display: block;
+}
+
+.img-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+.header {
+  color: #b44949;
+  margin: 5rem 1rem 5rem;
+}
+
+h1 {
+  margin: 4rem 1rem 4rem;
+  color: #b44949;
+  text-shadow: 2px 2px 5px gray;
+}
+
+h6 {
+  margin: 1rem 1rem;
+  color: rgb(228, 127, 33);
+}
+
+a.btn.btn-primary {
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+i.fa-brands.fa-google {
+  padding-left: 10px;
+  color: #1be53d;
+}
+
+form {
+  margin-left: 18px;
+}
+
+.btn {
+  padding: 5px 11px;
+}

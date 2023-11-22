@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    div.bg-gallery
+      h1 Image Gallery
+      if images.length
+        div.row.row-img
+          each image in images
+            div.col-lg-4.col-md-6.col-12.mb-4.img-container
+                img(src=image.imageUrl class='img-fluid' alt='Uploaded Image')
+      else
+        p No images uploaded yet.
+      div.buttons 
+        a(href='/upload' class='btn btn-primary mt-3') Upload More Images
+        a(href='/logout' class='btn btn-danger mt-3') Logout

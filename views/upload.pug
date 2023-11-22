@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.bg-container
+    div.card
+      h2.header Image Upload!
+      form(action='/upload' method='post' enctype='multipart/form-data')
+        input(type='file' name='image' accept='image/*' required)
+        button(type='submit' class='btn btn-success') Upload
+      a(href='/gallery' id='cropButton' class='btn btn-primary mt-3') Go to Gallery
+      a(href='/logout' class='btn btn-danger mt-3') Logout
